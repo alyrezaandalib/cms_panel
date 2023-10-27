@@ -1,0 +1,346 @@
+export const usersListRow = [
+    {
+        "address": null,
+        "birthday": "1995-12-19T00:00:00",
+        "code": 14516,
+        "created_at": "2023-10-19T15:44:56.550470",
+        "created_by": "radin",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "seniorazimi@gmail.com",
+        "first_name": "Saleh",
+        "gender": "male",
+        "id": 1,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Azimidokht",
+        "passwd": "$2b$12$gdl2B3zlpyA91P.zJtdjgO4x59.qQ4kASXllSM..TdAtvlXMj62qe",
+        "phone_number": 989133505260,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": null,
+        "town": null,
+        "updated_at": "2023-10-21T17:26:08.495905",
+        "updated_by": null,
+        "usr_code": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "usr_name": "seniorazimi"
+    },
+    {
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 2,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },
+    {
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 3,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 4,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 5,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 6,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 7,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 8,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 9,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 10,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },{
+        "address": "DehAbad,blv dashti",
+        "birthday": "2002-01-02T00:00:00",
+        "code": 76869,
+        "created_at": "2023-10-19T15:55:00.383316",
+        "created_by": "5dc8f62d-174b-4cec-ad93-7e20867d9cc2",
+        "deleted_at": null,
+        "deleted_by": null,
+        "email": "alireza.andalib@gmail.com",
+        "first_name": "Alireza",
+        "gender": "male",
+        "id": 11,
+        "is_active": true,
+        "is_admin": true,
+        "is_staff": true,
+        "is_super": true,
+        "last_name": "Andalib",
+        "passwd": "$2b$12$or5R7xeWt2.5wx8hdcRhsuDGY5k49uWHy0NaunhRBJuo0dgZrNsR6",
+        "phone_number": 989103639826,
+        "roles": [
+            {
+                "id": 3,
+                "name": "super_admin"
+            }
+        ],
+        "state": "Yazd",
+        "town": "Meybod",
+        "updated_at": "2023-10-21T17:12:07.695652",
+        "updated_by": null,
+        "usr_code": "c6d0a96e-0e7d-4ee4-b1ef-9ff9fa4bbfcf",
+        "usr_name": "Ara-fronEnd"
+    },
+]

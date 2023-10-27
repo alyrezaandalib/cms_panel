@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-size: 100%;
+    user-select: none !important;
+}
+body{
+    overflow-y: hidden !important;
+}
+
+button > svg{
+    color: #19679D !important;
+}
+
+.active {
+    background-color: #278ed5 !important;
+    color: #f2f2f2 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(234, 70, 70, 0);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #19679D;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2776ab;
+}
+
+.searchbar{
+    padding: 0 !important;
+    border-radius: 10px;
+}
+
+.searchbar > div > svg {
+    color: #a4a4a4 !important;
+    display: none;
+}
+
+.searchbar > div > input {
+    width: 20rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: #19679D !important;
+    outline: none !important;
+    border: none !important;
+}
+.searchbar > div > input:hover, .searchbar > div > input:focus-within {
+    outline: none !important;
+    border: none !important;
+}
+
+.MuiDataGrid-cell:focus-within, .MuiDataGrid-cell:focus{
+    outline: none !important;
+}
