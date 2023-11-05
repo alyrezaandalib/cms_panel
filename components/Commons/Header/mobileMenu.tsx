@@ -58,12 +58,12 @@ export default function SwipeableTemporaryDrawer() {
 
   return (
     <div key={"top"}>
-      <Button onClick={toggleDrawer("top", true)}>
-        <RiMenu4Line className={"text-xl"} />
-      </Button>
+      <button className={"p-2"} onClick={toggleDrawer("top", true)}>
+        <RiMenu4Line className={"text-2xl"} />
+      </button>
       <SwipeableDrawer
         PaperProps={{
-          className: "bg-primary rounded-b-lg text-neutral top-12",
+          className: "bg-primary rounded-b-lg text-neutral",
         }}
         sx={{ backgroundColor: "rgb(0,0,0,0)" }}
         anchor={"top"}

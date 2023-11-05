@@ -209,7 +209,7 @@ export default function Page() {
   router = useRouter();
 
   return (
-    <div className={"flex justify-center items-start lg:items-center py-8"}>
+    <div className={"flex justify-center items-start lg:items-center"}>
       <AllUsers
         columns={columns}
         addForm={<UsersAddForm />}

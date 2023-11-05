@@ -137,12 +137,12 @@ export default function DataTable(props: propsType) {
   const [reloadPage, setReloadPage] = useState(false);
 
   const [paginationModel, setPaginationModel] = React.useState({
-    pageSize: 7,
+    pageSize: 6,
     page: 0,
   });
 
   return (
-    <div className="overflow-auto bg-secondary rounded-2xl p-5 w-[90vw] xl:w-[80vw] mb-20 lg:mb-0">
+    <div className="overflow-auto w-[100vw] mb-20 pt-5">
       <Grid container>
         <Grid
           item
@@ -200,7 +200,7 @@ export default function DataTable(props: propsType) {
         </Grid>
         <Grid item width={"100%"} className={"text-neutral"}>
           <StyledDataGrid
-            className={"text-neutral"}
+            className={"text-neutral rounded-lg p-2 shadow-none"}
             disableColumnSelector={true}
             sx={{
               boxShadow: 2,

@@ -5,6 +5,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import { IoClose } from "react-icons/io5";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 export default function DateCalender() {
   // ** today Time ////////////////////////////////
@@ -18,27 +19,35 @@ export default function DateCalender() {
   const together = [yearOfDate, monthOfDate, dayOfMonth].join("/");
   const together2 = [yearOfDate, monthOfDate, dayOfMonth].join("-");
 
+  const darkTheme = createTheme({
+    palette: {
+      mode: "dark",
+    },
+  });
+
   return (
-    <div>
-      <button className={""} onClick={() => window.datePicker.showModal()}>
-        {together}
-      </button>
-      <dialog id="datePicker" className="p-10 rounded-2xl">
-        <button onClick={() => window.datePicker.close()}>
-          <IoClose className={"text-red-500 text-2xl mb-3"} />
+    <ThemeProvider theme={darkTheme}>
+      <div className={"hidden lg:block"}>
+        <button className={""} onClick={() => window.dateCalendar.showModal()}>
+          {together}
         </button>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <DemoItem label="readOnly">
-            <DateCalendar defaultValue={dayjs(together2)} readOnly />
-          </DemoItem>
-        </LocalizationProvider>
-      </dialog>
-    </div>
+        <dialog id="dateCalendar" className="p-10 rounded-2xl">
+          <button onClick={() => window.dateCalendar.close()}>
+            <IoClose className={"text-red-500 text-2xl mb-3"} />
+          </button>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoItem label="readOnly">
+              <DateCalendar defaultValue={dayjs(together2)} readOnly />
+            </DemoItem>
+          </LocalizationProvider>
+        </dialog>
+      </div>
+    </ThemeProvider>
   );
 }
 
 declare global {
   interface Window {
-    datePicker: any;
+    dateCalendar: any;
   }
 }

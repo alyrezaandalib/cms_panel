@@ -6,11 +6,12 @@
     font-size: 100%;
     user-select: none !important;
 }
-body{
+
+body {
     overflow-y: hidden !important;
 }
 
-button > svg{
+button > svg {
     color: #19679D !important;
 }
 
@@ -41,7 +42,7 @@ button > svg{
     background: #2776ab;
 }
 
-.searchbar{
+.searchbar {
     padding: 0 !important;
     border-radius: 10px;
 }
@@ -66,12 +67,72 @@ button > svg{
     border: none !important;
 }
 
-.MuiDataGrid-cell:focus-within, .MuiDataGrid-cell:focus{
+.MuiDataGrid-cell:focus-within, .MuiDataGrid-cell:focus {
     outline: none !important;
 }
 
 @media screen and (min-width: 1024px) {
-    .searchbar > div > input  {
+    .searchbar > div > input {
         width: 20rem;
     }
+}
+
+/*mainSearch ///////////////////////////////////////*/
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 18px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.input::placeholder {
+    color: transparent;
+}
+
+.input:focus::placeholder {
+    color: rgb(131, 128, 128);
+}
+
+.input:focus, .input:not(:placeholder-shown) {
+    background-color: transparent;
+    border: 1px solid #19679D;
+    width: 250px;
+    cursor: none;
+    padding: 18px 16px 18px 40px;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    z-index: -1;
+    fill: #19679D;
+    border: 1px solid #19679D;
+}
+
+.input:hover + .icon {
+    transform: rotate(360deg);
+    transition: .2s ease-in-out;
+}
+
+.input:focus + .icon, .input:not(:placeholder-shown) + .icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
 }
