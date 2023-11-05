@@ -209,12 +209,7 @@ export default function Page() {
   router = useRouter();
 
   return (
-    <div
-      className={
-        "bg-primary rounded-tl-3xl mt-[80px] flex justify-center items-center"
-      }
-      style={{ overflowY: "auto", height: "calc(100vh - 4rem)" }}
-    >
+    <div className={"flex justify-center items-start lg:items-center py-8"}>
       <AllUsers
         columns={columns}
         addForm={<UsersAddForm />}

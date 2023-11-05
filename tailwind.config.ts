@@ -33,10 +33,9 @@ const config: {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      boxShadow: {
+        myShadow1: "4.1px -5px 0 0 ",
+        myShadow2: "-4.1px -5px 0 0",
       },
     },
   },
@@ -49,7 +48,7 @@ const config: {
 
           secondary: "#fff",
 
-          accent: "#19679D",
+          accent: "#A3C2D9",
 
           neutral: "#20180E",
 

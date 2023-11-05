@@ -1,1 +1,1 @@
-export const baseURL = 'https://api.ertebat.app'
+export const baseURL = "https://192.168.8.100";

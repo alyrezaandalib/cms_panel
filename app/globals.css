@@ -52,7 +52,7 @@ button > svg{
 }
 
 .searchbar > div > input {
-    width: 20rem;
+    width: 6rem;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -60,6 +60,7 @@ button > svg{
     outline: none !important;
     border: none !important;
 }
+
 .searchbar > div > input:hover, .searchbar > div > input:focus-within {
     outline: none !important;
     border: none !important;
@@ -67,4 +68,10 @@ button > svg{
 
 .MuiDataGrid-cell:focus-within, .MuiDataGrid-cell:focus{
     outline: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .searchbar > div > input  {
+        width: 20rem;
+    }
 }

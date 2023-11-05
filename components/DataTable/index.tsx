@@ -14,7 +14,7 @@ import { Portal } from "@mui/base/Portal";
 import { GridToolbarQuickFilter, GridToolbar } from "@mui/x-data-grid";
 import { Grid } from "@mui/material";
 import { useEffect, useState } from "react";
-import { usersListRow } from "@/JsonFiles/usersList";
+import { usersListRow } from "@/JsonFiles/Users/usersList";
 import AddDialog from "@/components/Dialog";
 
 function MyCustomToolbar(props: any) {
@@ -137,17 +137,17 @@ export default function DataTable(props: propsType) {
   const [reloadPage, setReloadPage] = useState(false);
 
   const [paginationModel, setPaginationModel] = React.useState({
-    pageSize: 9,
+    pageSize: 7,
     page: 0,
   });
 
   return (
-    <div className="overflow-auto bg-secondary rounded-2xl p-5 w-[80vw]">
+    <div className="overflow-auto bg-secondary rounded-2xl p-5 w-[90vw] xl:w-[80vw] mb-20 lg:mb-0">
       <Grid container>
         <Grid
           item
           className={
-            "w-full rounded-lg h-14 text-white flex-row flex justify-between items-center px-4"
+            "w-full rounded-lg h-14 text-white flex-row flex justify-between items-center px-2"
           }
           sx={{ marginBottom: 2, backgroundColor: "rgba(0,0,0,.08)" }}
         >
@@ -158,7 +158,7 @@ export default function DataTable(props: propsType) {
             <AddDialog addForm={props.addForm} />
             <button
               disabled={selectedRows.length == 0}
-              className="btn btn-outline btn-error btn-sm ml-4"
+              className="btn btn-outline btn-error btn-sm ml-2"
               style={{ fontWeight: 400 }}
               // onClick={() => {
               //     const deleteReq = async () => {

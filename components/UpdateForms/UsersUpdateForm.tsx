@@ -2,9 +2,9 @@
 import * as React from "react";
 import * as Yup from "yup";
 import { ErrorMessage, Field, Form, Formik, useFormik } from "formik";
-import { FormData } from "@/JsonFiles/UsersFeild";
+import { FormData } from "@/JsonFiles/Users/UsersFeild";
 import Inputs from "@/components/Inputs";
-import { Rules } from "@/JsonFiles/UsersFeild";
+import { Rules } from "@/JsonFiles/Users/UsersFeild";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";

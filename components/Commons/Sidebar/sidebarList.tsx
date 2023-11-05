@@ -25,7 +25,6 @@ type SidebarProps = {
 
 const Sidebar: React.FC<SidebarProps> = ({ items, open }) => {
   const pathName = usePathname();
-  const router = useRouter();
   const [openLists, setOpenLists] = useState<number[]>([]);
 
   useEffect(() => {
@@ -106,7 +105,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items, open }) => {
                   <Link href={subItem.href} key={subItem.id}>
                     <ListItemButton
                       className={`p-3 hover:bg-[#aaa]/20 my-0.5 ${
-                        pathName === subItem.href && "bg-accent/30 text-neutral"
+                        pathName === subItem.href && "bg-accent text-neutral"
                       }`}
                       sx={{ marginLeft: 2.5, borderRadius: 3 }}
                     >
