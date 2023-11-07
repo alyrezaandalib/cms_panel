@@ -26,11 +26,14 @@ export default function DateCalender(props: any) {
   const together2 = [yearOfDate, monthOfDate, dayOfMonth].join("-");
 
   let theme: PaletteMode;
-  if (props.theme == "night") {
+  console.log(typeof props.theme);
+  console.log(props.theme);
+  if (props.theme === "night") {
     theme = "dark";
   } else {
     theme = "light";
   }
+  console.log("current", theme);
   const darkTheme = createTheme({
     palette: {
       mode: theme,

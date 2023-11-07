@@ -48,7 +48,7 @@ export default function Nav(props: themeType) {
         >
           {/*// ** calender ////////////////////////////////////////*/}
 
-          <DateCalender theme={props} />
+          <DateCalender theme={props.theme} />
 
           <div className={"flex items-center justify-between"}>
             {/*// ** search ////////////////////////////////////////*/}
