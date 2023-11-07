@@ -2,7 +2,7 @@
 import * as React from "react";
 import { styled, Theme, CSSObject } from "@mui/material/styles";
 import MuiDrawer from "@mui/material/Drawer";
-import ListHandler from "@/components/Commons/Sidebar/sidebarList";
+import ListHandler from "@/components/Commons/Header/Sidebar/sidebarList";
 import { sidebarItems } from "@/JsonFiles/menu&sidebar/SidebarLists";
 
 const drawerWidth = 250;

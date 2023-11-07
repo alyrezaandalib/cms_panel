@@ -6,8 +6,14 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import { IoClose } from "react-icons/io5";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
+import { PaletteMode } from "@mui/material";
 
-export default function DateCalender() {
+type themeType = {
+  theme: string | RequestCookie | undefined;
+};
+
+export default function DateCalender(props: any) {
   // ** today Time ////////////////////////////////
 
   const date = new Date();
@@ -19,9 +25,15 @@ export default function DateCalender() {
   const together = [yearOfDate, monthOfDate, dayOfMonth].join("/");
   const together2 = [yearOfDate, monthOfDate, dayOfMonth].join("-");
 
+  let theme: PaletteMode;
+  if (props.theme == "night") {
+    theme = "dark";
+  } else {
+    theme = "light";
+  }
   const darkTheme = createTheme({
     palette: {
-      mode: "dark",
+      mode: theme,
     },
   });
 

@@ -1,4 +1,5 @@
 "use client";
+
 import AllUsers from "@/components/DataTable";
 import { GridColDef } from "@mui/x-data-grid";
 // import UserAddForm from "@/components/AddForms/UserAddForm";

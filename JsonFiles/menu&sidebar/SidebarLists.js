@@ -6,7 +6,6 @@ import { HiOutlineHome } from "react-icons/hi";
 import { IoLibrary } from "react-icons/io5";
 import { FaUsers, FaUserAlt } from "react-icons/fa";
 import { CiMenuKebab } from "react-icons/ci";
-import { HiOutlineDocumentText } from "react-icons/hi";
 
 export const sidebarItems = [
   {
@@ -24,12 +23,6 @@ export const sidebarItems = [
   },
   {
     id: 2,
-    name: "Blog",
-    icon: <HiOutlineDocumentText />,
-    items: [],
-  },
-  {
-    id: 3,
     name: "Posts",
     icon: <AiOutlinePushpin />,
     items: [
@@ -60,7 +53,7 @@ export const sidebarItems = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     name: "Media",
     icon: <MdOutlinePermMedia />,
     items: [
@@ -79,7 +72,7 @@ export const sidebarItems = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     name: "Users",
     icon: <FaUsers />,
     items: [
@@ -104,13 +97,13 @@ export const sidebarItems = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     name: "Tools",
     icon: <TbTools />,
     items: [],
   },
   {
-    id: 7,
+    id: 6,
     name: "Settings",
     icon: <AiOutlineSetting />,
     items: [],

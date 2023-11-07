@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Sidebar from "../components/Commons/Sidebar";
+import Sidebar from "../components/Commons/Header/Sidebar";
 import { cookies, headers } from "next/headers";
 import Nav from "@/components/Commons/Header/nav";
 import MobileTabs from "@/components/Commons/Header/mobileTabs";

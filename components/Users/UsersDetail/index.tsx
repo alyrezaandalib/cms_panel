@@ -10,7 +10,8 @@ import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import Chip from "@mui/material/Chip";
 import { usersListRow } from "@/JsonFiles/Users/usersList";
-import { UsersInfo } from "@/JsonFiles/Users/UsersInfo";
+import { UsersDetail } from "@/JsonFiles/Users/UserseDetail";
+import MobileDetail from "@/components/Users/UsersDetail/mobileDetail";
 
 export default function UsersViewPage({ params }: { params: { id: string } }) {
   const router = useRouter();
@@ -25,6 +26,8 @@ export default function UsersViewPage({ params }: { params: { id: string } }) {
   return (
     <div className={" flex justify-center"}>
       <div className={"flex flex-col w-[99%]"}>
+        {/*// ** main Title ////////////////////////////////////////*/}
+
         <div className={"flex flex-row w-full justify-start items-center"}>
           <IconButton
             edge="start"
@@ -38,9 +41,12 @@ export default function UsersViewPage({ params }: { params: { id: string } }) {
           </IconButton>
           <Typography variant={"h6"}>User details</Typography>
         </div>
+
+        {/*// ** roles ////////////////////////////////////////*/}
+
         <div
           className={
-            "flex flex-col w-full flex-1 justify-start items-start bg-base-200 rounded-lg p-3 mt-6"
+            "flex flex-col w-full flex-1 justify-start items-start bg-base-200 rounded p-3 mt-6"
           }
         >
           <div className={"flex flex-row flex-1 justify-start items-center"}>
@@ -101,19 +107,27 @@ export default function UsersViewPage({ params }: { params: { id: string } }) {
             </label>
           </div>
         </div>
+
+        {/*// ** user info mobile ////////////////////////////////////////*/}
+        <div className={"block xl:hidden w-full mt-4"}>
+          <MobileDetail data={data} />
+        </div>
+
+        {/*// ** user info desktop ////////////////////////////////////////*/}
+
         <div
           className={
-            "hidden xl:flex flex-row w-full flex-1 justify-start mt-4 items-start bg-base-200 rounded-lg p-3"
+            "hidden xl:flex flex-row w-full flex-1 justify-start mt-4 items-start bg-base-200 rounded p-3"
           }
         >
           <div className={"flex flex-col flex-1 justify-center items-start"}>
             <h6
-              className={"mr-5 text-gray-200 mb-6 text-neutral"}
+              className={"mr-5 mb-6 text-neutral"}
               style={{ borderBottom: "1px solid gray" }}
             >
               CRUD Information
             </h6>
-            {UsersInfo.CRUD.map((item, index) => (
+            {UsersDetail.CRUD.map((item, index) => (
               <div key={index}>
                 <label
                   htmlFor={"crud"}
@@ -129,12 +143,12 @@ export default function UsersViewPage({ params }: { params: { id: string } }) {
           </div>
           <div className={"flex flex-col flex-1 justify-center items-start"}>
             <h6
-              className={"mr-5 text-gray-200 mb-6 text-neutral"}
+              className={"mr-5 mb-6 text-neutral"}
               style={{ borderBottom: "1px solid gray" }}
             >
               Personal
             </h6>
-            {UsersInfo.Personal.map((item, index) => (
+            {UsersDetail.Personal.map((item, index) => (
               <div key={index}>
                 <label
                   htmlFor={"personal"}
@@ -150,12 +164,12 @@ export default function UsersViewPage({ params }: { params: { id: string } }) {
           </div>
           <div className={"flex flex-col flex-1 justify-center items-start"}>
             <h6
-              className={"mr-5 text-gray-200 mb-6 text-neutral"}
+              className={"mr-5 mb-6 text-neutral"}
               style={{ borderBottom: "1px solid gray" }}
             >
               Account
             </h6>
-            {UsersInfo.Account.map((item, index) => (
+            {UsersDetail.Account.map((item, index) => (
               <div key={index}>
                 <label
                   htmlFor={"Account"}
@@ -177,17 +191,20 @@ export default function UsersViewPage({ params }: { params: { id: string } }) {
             <p id={"Account"}>{data.passwd ? "* * * * * * *" : "- - - -"}</p>
           </div>
         </div>
+
+        {/*// ** roles ////////////////////////////////////////*/}
+
         <div
           className={
-            "flex flex-col w-full mt-4 flex-1 justify-start items-start bg-base-200 rounded-lg p-3 pb-6"
+            "flex flex-col w-full mt-4 flex-1 justify-start items-start bg-base-200 rounded p-3 pb-6 mb-40 xl:mb-0"
           }
         >
-          <h6
-            className={"mr-5 text-gray-200 mb-6"}
+          <div
+            className={"mr-5 text-neutral mb-6"}
             style={{ borderBottom: "1px solid gray" }}
           >
             Roles
-          </h6>
+          </div>
           <div className={"flex flex-row w-full justify-start items-center"}>
             <div id={"created-at"}>
               {data.roles

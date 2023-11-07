@@ -17,10 +17,10 @@ export const menu = [
   },
   {
     id: 1,
-    name: "Blog",
+    name: "Posts",
     icon: <HiOutlineDocumentText />,
     dis: "translate-x-16",
-    href: "/blog",
+    href: "/posts",
   },
   {
     id: 2,

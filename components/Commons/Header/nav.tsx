@@ -2,14 +2,12 @@
 import Image from "next/image";
 import RadinCloud from "@/public/radin-logo.svg";
 import { useState, useEffect } from "react";
-import Menu from "@mui/joy/Menu";
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 import { setCookie } from "cookies-next";
 import MobileMenu from "@/components/Commons/Header/mobileMenu";
-import Dropdown from "@mui/joy/Dropdown";
-import MenuButton from "@mui/joy/MenuButton";
-import { HiOutlineUserCircle } from "react-icons/hi";
 import DateCalender from "@/components/Commons/Header/DateCalender";
+import { AiOutlineUser } from "react-icons/ai";
+import Link from "next/link";
 
 type themeType = {
   theme: string | RequestCookie | undefined;
@@ -50,7 +48,7 @@ export default function Nav(props: themeType) {
         >
           {/*// ** calender ////////////////////////////////////////*/}
 
-          <DateCalender />
+          <DateCalender theme={props} />
 
           <div className={"flex items-center justify-between"}>
             {/*// ** search ////////////////////////////////////////*/}
@@ -86,7 +84,7 @@ export default function Nav(props: themeType) {
 
             {/*// ** theme ////////////////////////////////////////*/}
 
-            <label className="swap swap-rotate ml-3 mt-1">
+            <label className="swap swap-rotate ml-3 btn btn-ghost btn-circle">
               <input
                 type="checkbox"
                 onChange={themeHandler}
@@ -122,34 +120,35 @@ export default function Nav(props: themeType) {
             {/*// ** Desktop Menu ////////////////////////////////////////*/}
 
             <div className={"hidden xl:block"}>
-              <Dropdown>
-                <MenuButton
-                  className={"text-neutral/70 border-none flex item-center"}
-                >
-                  alireza andalib
-                  <HiOutlineUserCircle
-                    className={"text-accent text-2xl ml-1"}
-                  />
-                </MenuButton>
-                <Menu
-                  className={
-                    "bg-base-100 border-none shadow-lg p-3 w-[200px] rounded-xl"
-                  }
-                >
-                  <button className={"btn whitespace-nowrap my-0.5"}>
-                    Profile
-                  </button>
-                  <button className={"btn whitespace-nowrap my-0.5"}>
-                    Setting
-                  </button>
-                  <button
-                    className={"btn whitespace-nowrap my-0.5 bg-red-500"}
-                    onClick={() => window.logout.showModal()}
+              <div className={"hidden xl:block"}>
+                <button className="dropdown dropdown-end">
+                  <div
+                    tabIndex={0}
+                    className={
+                      "flex justify-center items-center btn btn-ghost btn-circle"
+                    }
                   >
-                    exit
-                  </button>
-                </Menu>
-              </Dropdown>
+                    <AiOutlineUser className={"text-xl"} />
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40"
+                  >
+                    <li style={{ textAlign: "center" }}>
+                      <Link href={""}>My Profile</Link>
+                    </li>
+                    <li>
+                      <Link
+                        className={"bg-error my-2 text-white"}
+                        href={""}
+                        onClick={() => window.logout.showModal()}
+                      >
+                        Logout
+                      </Link>
+                    </li>
+                  </ul>
+                </button>
+              </div>
             </div>
           </div>
         </div>
