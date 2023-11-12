@@ -8,6 +8,7 @@ import MobileMenu from "@/components/Commons/Header/mobileMenu";
 import DateCalender from "@/components/Commons/Header/DateCalender";
 import { AiOutlineUser } from "react-icons/ai";
 import Link from "next/link";
+import style from "./style.module.css";
 
 type themeType = {
   theme: string | RequestCookie | undefined;
@@ -53,17 +54,17 @@ export default function Nav(props: themeType) {
           <div className={"flex items-center justify-between"}>
             {/*// ** search ////////////////////////////////////////*/}
 
-            <div className="input-container">
+            <div className={style.inputContainer}>
               <input
                 placeholder="Search something..."
-                className="input"
+                className={style.input}
                 name="text"
                 type="text"
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                className="icon"
+                className={style.icon}
               >
                 <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
                 <g
@@ -156,7 +157,7 @@ export default function Nav(props: themeType) {
 
       {/*// ** exit dialog ////////////////////////////////////////*/}
 
-      <dialog id="logout" className="modal">
+      <dialog id="logout">
         <form
           method="dialog"
           className="modal-box w-3/12 max-w-3xl text-neutral"

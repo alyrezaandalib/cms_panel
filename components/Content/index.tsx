@@ -1,5 +1,5 @@
 "use client";
-import Sidebar from "../Commons/Header/Sidebar";
+import Sidebar from "../Commons/Sidebar";
 
 export default function Content(props: propsType) {
   return (

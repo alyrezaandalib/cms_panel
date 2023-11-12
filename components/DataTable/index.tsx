@@ -15,7 +15,7 @@ import { GridToolbarQuickFilter, GridToolbar } from "@mui/x-data-grid";
 import { Grid } from "@mui/material";
 import { useEffect, useState } from "react";
 import { usersListRow } from "@/JsonFiles/Users/usersList";
-import AddDialog from "@/components/Dialog";
+import AddDialog from "../Dialog/usersDialog";
 
 function MyCustomToolbar(props: any) {
   return (

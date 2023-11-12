@@ -36,7 +36,7 @@ export const sidebarItems = [
         id: 2,
         name: "Add new",
         icon: <MdAdd />,
-        href: "/posts/add-new",
+        href: "/posts/add",
       },
       {
         id: 3,

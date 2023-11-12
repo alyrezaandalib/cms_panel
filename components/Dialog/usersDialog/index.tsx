@@ -85,6 +85,7 @@ export default function AddDialog(props: propsType) {
     </div>
   );
 }
+
 interface propsType {
-  addForm: any;
+    addForm: any;
 }
