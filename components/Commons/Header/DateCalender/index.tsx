@@ -33,7 +33,7 @@ export default function DateCalender(props: any) {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <div className={"hidden lg:block"}>
+      <div className={"hidden xl:block"}>
         <button className={""} onClick={() => window.dateCalendar.showModal()}>
           {together}
         </button>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import QuillEditor from "./editor";
+import QuillEditor from "./Editor/editor";
 import SelectImage from "@/components/posts/AddNew/selectImage";
 import ChipInput from "@/components/posts/AddNew/ChipInput";
 
@@ -18,7 +18,7 @@ export default function AddNew() {
       onSubmit={handleSubmit}
       className={"w-full flex justify-center items-start"}
     >
-      <div className={"w-[74%] mr-2"}>
+      <div className={"w-[74%] mr-3"}>
         {/*// ** post title ////////////////////////////////////////*/}
 
         <div
@@ -34,7 +34,7 @@ export default function AddNew() {
 
         {/*// ** post body ////////////////////////////////////////*/}
 
-        <div className={"bg-secondary w-full my-2 rounded-lg h-[35.7rem]"}>
+        <div className={"bg-secondary w-full mt-3 rounded-lg h-[80vh] p-5"}>
           <QuillEditor content={content} onChange={handleEditorChange} />
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function AddNew() {
         </div>
         {/*// ** tag */}
         <div className={"my-5"}>
-          <p className={"mb-3"}>Tags</p>
+          <p>Tags</p>
           {/*/>*/}
           <ChipInput />
         </div>
