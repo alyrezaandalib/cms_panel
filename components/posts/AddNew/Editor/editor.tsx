@@ -22,10 +22,8 @@ const AllFeaturesQuillEditor: React.FC<AllFeaturesQuillEditorProps> = ({ content
             ['formula'],
             ['image', 'video'],
             ['emoji'],
-            ['direction', { header: [1, 2, 3, 4, 5, 6, false] }],
-            [{ font: [] }],
         ],
-        syntax: true,
+        syntax: false,
         clipboard: {
             matchVisual: false,
         },
@@ -47,8 +45,7 @@ const AllFeaturesQuillEditor: React.FC<AllFeaturesQuillEditorProps> = ({ content
 
     return (
         <ReactQuill
-            style={{ border: 'none' }}
-            className={'border-none h-[93%]'}
+            className={'border-none h-[94%]'}
             theme="snow"
             value={content}
             onChange={onChange}

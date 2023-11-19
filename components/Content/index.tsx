@@ -1,16 +1,17 @@
 "use client";
-import Sidebar from "../Commons/Sidebar";
+import Sidebar from "../Commons/Sidebar/sidebarList";
+import {sidebarItems} from "@/JsonFiles/menu&sidebar/SidebarLists";
+import * as React from "react";
 
 export default function Content(props: propsType) {
+  const [open, setOpen] = React.useState(true);
   return (
     <div
       className={"flex flex-row flex-justify-start items-start"}
       style={{ overflowY: "clip" }}
     >
       {/*// ** sidebar*/}
-      <div className={"hidden xl:block"}>
-        <Sidebar />
-      </div>
+      <Sidebar  items={sidebarItems} open={open}/>
       <section
         style={{ overflowY: "auto", height: "calc(100vh - 4rem)" }}
         className={

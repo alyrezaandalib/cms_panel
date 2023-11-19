@@ -11,7 +11,7 @@ export default function Inputs({ label, type = "text", name, id, as }: any) {
         as={as}
         type={type}
         className={`input bg-base-200 relative ${
-          as === "textarea" && "h-28 w-[758px]"
+          as === "textarea" ? "h-28 w-[78vw] xl:w-[38.6vw]" : "w-[78vw]  xl:w-[18vw]"
         }`}
         id={id}
         name={name}

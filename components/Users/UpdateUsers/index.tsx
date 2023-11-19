@@ -33,7 +33,7 @@ export default function AddDialog() {
       >
         <div
           className={
-            "flex w-4/6 h-[95%] flex-col p-8 bg-primary rounded-lg text-base-content overflow-y-auto"
+            "flex w-[100%] xl:w-4/6 xl:h-[95%] flex-col p-8 bg-primary rounded-lg text-base-content overflow-y-auto"
           }
         >
           <div

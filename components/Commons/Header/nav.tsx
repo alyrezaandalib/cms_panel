@@ -39,12 +39,12 @@ export default function Nav(props: themeType) {
         <Image
           src={RadinCloud}
           alt={"Radin Cloud CMS"}
-          className={"p-2 w-[60px] xl:w-[80px]"}
+          className={"p-2 w-[60px] xl:w-[64px]"}
         />
 
         <div
           className={
-            "w-[95%] xl:px-5 flex justify-end xl:justify-between items-center"
+            "w-[86%] xl:px-5 flex justify-end xl:justify-between items-center mt-3"
           }
         >
           {/*// ** calender ////////////////////////////////////////*/}

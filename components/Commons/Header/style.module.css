@@ -37,7 +37,7 @@
 .icon {
     position: absolute;
     /*left: 0;*/
-    top: 10px;
+    top: 16px;
     height: 40px;
     width: 40px;
     background-color: transparent;
@@ -60,6 +60,6 @@
 
 @media screen and (min-width: 1280px) {
     .icon {
-        top: 20px;
+        top: 18px;
     }
 }

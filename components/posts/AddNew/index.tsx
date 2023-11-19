@@ -18,7 +18,7 @@ export default function AddNew() {
       onSubmit={handleSubmit}
       className={"w-full flex justify-center items-start"}
     >
-      <div className={"w-[74%] mr-3"}>
+      <div className={"w-[80%] mr-3"}>
         {/*// ** post title ////////////////////////////////////////*/}
 
         <div
@@ -34,7 +34,7 @@ export default function AddNew() {
 
         {/*// ** post body ////////////////////////////////////////*/}
 
-        <div className={"bg-secondary w-full mt-3 rounded-lg h-[80vh] p-5"}>
+        <div className={"bg-secondary w-full mt-3 rounded-lg h-[83.3vh] p-5"}>
           <QuillEditor content={content} onChange={handleEditorChange} />
         </div>
       </div>
@@ -47,8 +47,8 @@ export default function AddNew() {
       >
         {/*// ** buttons */}
         <div className={"flex flex-col"}>
-          <button className={"mb-2 btn bg-accent text-xs"}>save</button>
-          <button className={"btn text-accent btn-outline text-xs"}>
+          <button className={"mb-2 btn bg-accent text-lg"}>save</button>
+          <button className={"btn text-accent btn-outline"}>
             move to draft
           </button>
         </div>

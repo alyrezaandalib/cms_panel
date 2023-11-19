@@ -142,7 +142,7 @@ export default function DataTable(props: propsType) {
   });
 
   return (
-    <div className="overflow-auto w-[100vw] mb-20 pt-5">
+    <div className="overflow-auto w-[100vw] xl:w-[80vw] mb-20 pt-5">
       <Grid container>
         <Grid
           item

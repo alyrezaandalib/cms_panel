@@ -74,66 +74,66 @@ export default function UserAddForm() {
   };
 
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={loginHandleSubmit}
-    >
-      <Form className={"w-full flex-row flex justify-between"} id={"add-form"}>
-        <div className={"w-[65%]"}>
-          <div className={"flex flex-wrap"}>
-            {FormData.map((item, index) => (
-              <Inputs
-                key={index}
-                label={item.label}
-                type={item.type}
-                name={item.name}
-                id={item.id}
-                as={item.as}
-              />
-            ))}
+      <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={loginHandleSubmit}
+      >
+        <Form className={"w-full flex-row xl:flex justify-between"} id={"add-form"}>
+          <div className={"w-full xl:w-[65%]"}>
+            <div className={"flex flex-wrap"}>
+              {FormData.map((item, index) => (
+                  <Inputs
+                      key={index}
+                      label={item.label}
+                      type={item.type}
+                      name={item.name}
+                      id={item.id}
+                      as={item.as}
+                  />
+              ))}
 
-            {/*// ** gender */}
-            <div className={"flex flex-col flex-1 mx-2 h-full"}>
-              <label className="label">
-                <span className="label-text whitespace-nowrap">Gender:</span>
-              </label>
-              <Field
-                className={`input bg-base-200 relative`}
-                as="select"
-                id={"gender"}
-                name={"gender"}
-              >
-                <option key={100} value={"male"}>
-                  Male
-                </option>
-                <option key={1000} value={"female"}>
-                  Female
-                </option>
-              </Field>
-              <ErrorMessage
-                name={"gender"}
-                component={"div"}
-                className={"text-error text-xs mb-1 mr-0.5 mt-1"}
-              />
+              {/*// ** gender */}
+              <div className={"flex flex-col ml-2 xl:mx-0 flex-1"}>
+                <label className="label">
+                  <span className="label-text whitespace-nowrap">Gender:</span>
+                </label>
+                <Field
+                    className={`input bg-base-200 w-[78vw] xl:w-[18vw] px-1 `}
+                    as="select"
+                    id={"gender"}
+                    name={"gender"}
+                >
+                  <option key={100} value={"male"}>
+                    Male
+                  </option>
+                  <option key={1000} value={"female"}>
+                    Female
+                  </option>
+                </Field>
+                <ErrorMessage
+                    name={"gender"}
+                    component={"div"}
+                    className={"text-error text-xs mb-1 mr-0.5 mt-1"}
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <FormControl className={"w-[30%] px-5"}>
-          <div className={"mb-3"}>Rule</div>
-          <RadioGroup value={rule}>
-            {Rules.map((item, index) => (
-              <FormControlLabel
-                onClick={handleChange}
-                key={index}
-                value={item.value}
-                control={<Radio />}
-                label={item.label}
-              />
-            ))}
-          </RadioGroup>
-        </FormControl>
-      </Form>
-    </Formik>
+          <FormControl className={"w-[30%] px-5 mt-10 xl:mt-0"}>
+            <div className={"mb-3"}>Rule</div>
+            <RadioGroup value={rule}>
+              {Rules.map((item, index) => (
+                  <FormControlLabel
+                      onClick={handleChange}
+                      key={index}
+                      value={item.value}
+                      control={<Radio />}
+                      label={item.label}
+                  />
+              ))}
+            </RadioGroup>
+          </FormControl>
+        </Form>
+      </Formik>
   );
 }
